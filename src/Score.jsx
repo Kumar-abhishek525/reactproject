@@ -16,6 +16,12 @@ function Score() {
               </h1>
               <button className='bg-blue-400 px-8 py-3 text-white text-lg font-semibold rounded-2xl hover:bg-blue-700 active:scale-95 transition-all duration-200 shadow-[0_0_10px_rgba(255,0,0,0.25)]'onClick=
               {()=>{setScore(score+1);}}>Incrment</button>
+
+               <button className='bg-green-400 px-8 py-3 text-white text-lg font-semibold rounded-2xl hover:bg-blue-700 active:scale-95 transition-all duration-200 shadow-[0_0_10px_rgba(255,0,0,0.25)]'onClick=
+              {()=>{setScore(score>0?score-1:0);}}>Decrment</button>
+
+               <button className='bg-red-400 px-8 py-3 text-white text-lg font-semibold rounded-2xl hover:bg-blue-700 active:scale-95 transition-all duration-200 shadow-[0_0_10px_rgba(255,0,0,0.25)]'onClick=
+              {()=>{setScore(0);}}>Resett</button>
         </div>
     </div>
   )
